@@ -226,7 +226,7 @@ time.sleep(5)
 element_topic = driver.find_elements(By.CLASS_NAME, 'Theme-title')  # названия тем
 element_topic2 = driver.find_elements(By.CLASS_NAME, 'Theme-children')  # под темы тем
 
-for i in range(1, len(element_topic), 2):
+for i in range(2, len(element_topic), 2):
     folder_name = "data/" + element_topic[i].text
     try:
         os.makedirs(folder_name)
